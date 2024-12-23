@@ -49,11 +49,20 @@ const quotes = [
   {
     text: "Het leven is een frikandel. Je moet hem zelf speciaal maken.",
   },
+  {
+    text: "Van hard werken is nog nooit iemand rijk geworden, maar wel moe.",
+  },
+  {
+    text: "Wat vandaag niet lukt, laten we morgen ook liggen.",
+  },
 ]
 
 const images = [
   require('../images/tegeltjes/tegel1.svg'),
-  require('../images/tegeltjes/tegel2.svg')
+  require('../images/tegeltjes/tegel2.svg'),
+  require('../images/tegeltjes/tegel3.svg'),
+  require('../images/tegeltjes/tegel4.svg'),
+  require('../images/tegeltjes/tegel5.svg')
 ]
 
 const IndexPage: React.FC<PageProps> = () => {
