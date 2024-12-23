@@ -5,11 +5,22 @@ const config: GatsbyConfig = {
     title: `Wijsheid op Tegels`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-styled-components"]
+  plugins: [
+    "gatsby-plugin-styled-components",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Wijsheid op Tegels`,
+        short_name: `Wijsheid`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#162545`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`, // Path to your favicon
+      },
+    },
+  ],
 };
 
 export default config;
